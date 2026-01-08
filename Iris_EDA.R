@@ -4,3 +4,4 @@ data(iris)
 head(iris)
 
 colnames(iris)
+dim(iris)
