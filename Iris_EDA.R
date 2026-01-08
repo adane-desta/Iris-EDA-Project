@@ -34,3 +34,11 @@ iris <- iris %>%
 
 head(iris)
 
+
+
+subset1 <- iris %>%
+  filter(Sepal.Length > 5.0 & Sepal.Width < 3.0)
+
+
+nrow(subset1)
+
