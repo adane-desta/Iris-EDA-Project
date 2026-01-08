@@ -20,8 +20,17 @@ plot(
 )
 legend("topright", legend = levels(iris$Species), col = 1:3, pch = 19)
 
-selected_data <- iris %>%
-  select(Sepal.Length, Sepal.Width, Species)
+
+filtered_data <- iris %>%
+  filter(Sepal.Length > 5.5)
 
 
-head(selected_data, 10)
+nrow(filtered_data)
+
+
+iris <- iris %>%
+  mutate(Sepal.Area = Sepal.Length * Sepal.Width)
+
+
+head(iris)
+
