@@ -54,3 +54,8 @@ subset2 <- iris %>%
 
 nrow(subset2)
 
+
+
+subset3 <- iris %>%
+filter(!(Species == "virginica" & Sepal.Length > 6.0))
+nrow(subset3)
