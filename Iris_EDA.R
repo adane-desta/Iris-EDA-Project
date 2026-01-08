@@ -42,3 +42,15 @@ subset1 <- iris %>%
 
 nrow(subset1)
 
+
+
+
+subset2 <- iris %>%
+  filter(
+    (Species == "setosa" | Species == "versicolor") &
+      Petal.Length > 2.0
+  )
+
+
+nrow(subset2)
+
