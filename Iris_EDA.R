@@ -5,3 +5,4 @@ head(iris)
 
 colnames(iris)
 dim(iris)
+colSums(is.na(iris))
