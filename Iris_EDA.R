@@ -19,3 +19,9 @@ plot(
   main = "Sepal Length vs Sepal Width"
 )
 legend("topright", legend = levels(iris$Species), col = 1:3, pch = 19)
+
+selected_data <- iris %>%
+  select(Sepal.Length, Sepal.Width, Species)
+
+
+head(selected_data, 10)
